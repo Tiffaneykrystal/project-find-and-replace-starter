@@ -30,9 +30,9 @@ replaceAllButton.addEventListener("click", function () {
 
     for (let j = 0; j < cells.length; j++) {
       console.log(cells[j].innerHTML);
-    }
-    if (cells[j].innerHTML.includes(find)) {
-      cells[j].innerHTML = cells[j].innerHTML.replace(find, replace);
+      if (cells[j].innerHTML.includes(find)) {
+        cells[j].innerHTML = cells[j].innerHTML.replace(find, replace);
+      }
     }
   }
 });
